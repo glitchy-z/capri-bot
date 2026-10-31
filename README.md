@@ -51,7 +51,7 @@ works.
 ## How to build
 
 <div align="center">
-  <img src="docs/terminal.svg" alt="clone, install, scan the qr, awake" width="88%"/>
+  <img src="docs/setup-terminal.svg" alt="clone, install, link a device, awake" width="88%"/>
 </div>
 
 Then scan the QR with WhatsApp — that's the whole setup. Detailed steps below.
