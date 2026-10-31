@@ -64,6 +64,34 @@ npm start
 Scan the QR with WhatsApp (**Linked devices → Link a device**). The session is
 stored in `auth_state/` — after that first scan she stays linked.
 
+### Background running
+
+Windows: `npm run bg` / `npm run stop` / `npm run logs` (hidden window,
+auto-restart on crash).
+
+Linux, macOS and **Android (Termux)**: `npm run bg-linux`, `npm run stop-linux`,
+`npm run logs-linux` — or plain `bash start.sh` / `bash stop.sh` /
+`tail -f bot.log`.
+
+### Android (Termux)
+
+The bot runs on an Android phone via [Termux](https://f-droid.org/en/packages/com.termux/)
+(use the F-Droid build — the Play Store one is dead):
+
+```
+pkg update && pkg install nodejs-lts ffmpeg git
+git clone https://github.com/glitchy-z/capri-bot.git
+cd capri-bot
+npm install
+cp config.example.json config.json   # add your keys
+bash start.sh
+```
+
+Everything works over ffmpeg from `pkg` — downloads, stickers, the persona
+chat. Two Android notes: exempt Termux from battery optimization so WhatsApp
+keeps the socket alive, and `!hd` uses the lanczos fallback (the AI upscaler
+has no Vulkan build for ARM Termux — every other feature is unaffected).
+
 ## Configuration (`config.json`)
 
 Copy `config.example.json` and fill in what you have — every key is optional;

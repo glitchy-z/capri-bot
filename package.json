@@ -1,27 +1,38 @@
 {
   "name": "capri-bot",
-  "version": "1.0.0",
-  "description": "WhatsApp bot with the Capri persona from Cyberpunk: Edgerunners 2 (Baileys)",
+  "version": "1.1.0",
+  "description": "WhatsApp bot with pluggable personas (default: Capri from Cyberpunk: Edgerunners 2) — LLM chat with failover, net search, code files, downloads (Baileys)",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --check bot.js",
     "start": "node bot.js",
     "bg": "powershell -NoProfile -ExecutionPolicy Bypass -File start-bg.ps1",
     "stop": "powershell -NoProfile -ExecutionPolicy Bypass -File stop-bg.ps1",
-    "logs": "powershell -NoProfile -Command \"Get-Content bot.log -Tail 40 -Wait\""
+    "logs": "powershell -NoProfile -Command \"Get-Content bot.log -Tail 40 -Wait\"",
+    "bg-linux": "bash start.sh",
+    "stop-linux": "bash stop.sh",
+    "logs-linux": "tail -f bot.log"
   },
-  "keywords": [],
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "persona",
+    "chatbot",
+    "cyberpunk",
+    "llm"
+  ],
   "type": "commonjs",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^7.0.0-rc14",
     "pino": "^10.4.0",
     "qrcode-terminal": "^0.12.0",
-    "youtube-dl-exec": "^3.1.17"
+    "youtube-dl-exec": "^3.1.19"
   },
   "allowScripts": {
     "@whiskeysockets/baileys@7.0.0-rc14": true,
     "protobufjs@7.6.6": true,
-    "youtube-dl-exec@3.1.17": true
+    "youtube-dl-exec@3.1.19": true
   }
 }

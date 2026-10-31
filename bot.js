@@ -145,7 +145,10 @@ const STICKER_FONT = [
   'impact.ttf', 'ariblk.ttf', 'segoeuib.ttf', 'arialbd.ttf',
   '/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf',
   '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf',
-  '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+  '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+  // android (termux): system fonts are always present
+  '/system/fonts/Roboto-Bold.ttf',
+  '/data/data/com.termux/files/usr/share/fonts/TTF/DejaVuSans-Bold.ttf'
 ]
   .map(f => f.includes(':') || f.startsWith('/') ? f : path.join(process.env.SystemRoot || 'C:\\Windows', 'Fonts', f))
   .find(p => fs.existsSync(p)) || null;
@@ -157,7 +160,10 @@ const STICKER_FONT = [
 // which keeps a whole line readable when the png download fails.
 const EMOJI_FONT = [
   'seguiemj.ttf', 'seguisym.ttf',
-  '/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf'
+  '/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf',
+  // android (termux)
+  '/system/fonts/NotoColorEmoji.ttf',
+  '/data/data/com.termux/files/usr/share/fonts/NotoColorEmoji.ttf'
 ]
   .map(f => f.includes(':') || f.startsWith('/') ? f : path.join(process.env.SystemRoot || 'C:\\Windows', 'Fonts', f))
   .find(p => fs.existsSync(p)) || null;
@@ -1632,7 +1638,7 @@ async function startBot() {
       keys: makeCacheableSignalKeyStore(state.keys, pino({ level: 'silent' }))
     },
     logger: pino({ level: 'silent' }),
-    browser: ['capri-bot', 'Chrome', '120.0.0'],
+    browser: ['capri-bot', 'Chrome', '131.0.0'],
     // when the linked device reports online, the phone sometimes withholds
     // message notifications from it — staying "offline" keeps delivery reliable
     markOnlineOnConnect: false
