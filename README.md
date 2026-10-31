@@ -82,6 +82,8 @@ chain automatically).
 | `openrouterKey` | [OpenRouter](https://openrouter.ai/keys) — free models available |
 | `zhipuKey` | [Zhipu](https://open.bigmodel.cn/) — glm-4.7-flash free tier; comma-separate several |
 | `nvidiaModel` | model id for the NVIDIA provider |
+| `persona` | persona pack in `personas/` — `capri` (default), `none`, or your own |
+| `name` | the summon word — what people type in groups to wake the bot |
 
 How the chat chain works: Groq gpt-oss-120b → gpt-oss-20b → NVIDIA (all keys
 rotated) → OpenRouter → Zhipu. Timeouts fail fast (15s), canned refusals from
@@ -103,6 +105,32 @@ AI path:
 You can also point the `REALESRGAN_PATH` env var at a binary elsewhere.
 `FFMPEG_PATH` / `FFPROBE_PATH` env vars override the ffmpeg lookup.
 
+## Personas — Capri, blank, or your own
+
+The personality isn't hardcoded — it's a pack in `personas/`. Two ship with the
+bot, and you can write your own:
+
+| Pack | What it is |
+|---|---|
+| `capri` (default) | the full Edgerunners 2 construct — lore, slang, example lines |
+| `none` | a clean, friendly slate with zero character — **edit `personas/none.md` and it's your bot** |
+
+```json
+{
+  "persona": "none",     // "capri", "none", or any file in personas/
+  "name": "nova"         // the summon word — people type it in groups
+}
+```
+
+A persona pack is one markdown file: identity, how it acts, how it talks,
+example lines — the bot splices it into a generic core that carries the
+mechanics (brevity, no emojis, the net-search and file tools, English-only).
+`personas/<id>.lines` (one line per row) feeds the `!<name>` command. Restart
+after editing, or send `!reset` to drop old chat memory.
+
+So: want Capri? Change nothing. Want your own? Set `"persona": "none"`, edit
+`personas/none.md`, pick a `"name"`, done.
+
 ## Docker
 
 See [DEPLOY.md](DEPLOY.md) for a full container deployment (Compose file
@@ -117,9 +145,9 @@ Two minutes of customization and she's *your* construct, not a clone:
   intentionally **not in this repo** — no `menu.jpg` means `!menu` falls back
   to a clean text menu.
 - **`config.handle`** — your handle under the menu's tagline.
-- **`CAPRI_SYSTEM`** in `bot.js` — the whole persona: lore, rules, slang,
-  example lines. Tune her voice however you like; `CAPRI_LINES` is the pool
-  behind `!capri`.
+- **`personas/<id>.md`** — the whole character: lore, rules, slang, example
+  lines. Tune the voice however you like; `personas/<id>.lines` is the pool
+  behind `!<name>`.
 
 ## Owner commands
 
@@ -141,8 +169,9 @@ Two minutes of customization and she's *your* construct, not a clone:
 ## Project layout
 
 ```
-bot.js              the whole bot — persona, chain, tools, downloaders
-bridge/             the bridge-brain path: inbox/outbox + persona.md
+bot.js              the whole bot — chain, tools, downloaders (persona-agnostic)
+personas/           persona packs: capri.md, none.md + .lines pools — add yours
+bridge/             the external-brain path: inbox/outbox + persona.md
                     (set config.brain = "bridge" to route chat through it)
 docs/banner.svg     the readme banner
 tools/realesrgan/   optional AI upscaler binaries (not in repo)
@@ -163,11 +192,12 @@ auth_state/         YOUR whatsapp session — created on first run, NEVER share 
 
 ## Tuning her voice
 
-Everything she is lives in `bot.js`: `CAPRI_SYSTEM` (the persona prompt — lore,
-rules, slang, example lines), `CAPRI_LINES` (the `!capri` pool) and
-`bridge/persona.md` (the same persona for the bridge-brain path). Edit freely —
+Everything Capri is lives in `personas/capri.md` (the persona prompt — lore,
+rules, slang, example lines), `personas/capri.lines` (the `!capri` pool) and
+`bridge/persona.md` (the same persona for the external-brain path). Edit freely —
 the canon is Edgerunners 2: Kyoko made her, King's Crew stole the chip, Talia's
-father weaponized her, D chose the fireworks ending.
+father weaponized her, D chose the fireworks ending. Running the blank persona
+instead? Same idea, different file: `personas/none.md` is yours to rewrite.
 
 ## License
 

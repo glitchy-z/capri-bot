@@ -3,6 +3,8 @@
   "owner": "",
   "handle": "",
   "brain": "nvidia",
+  "persona": "capri",
+  "name": "capri",
   "groqKey": "",
   "nvidiaKey": "",
   "nvidiaModel": "openai/gpt-oss-20b",
