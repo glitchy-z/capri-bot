@@ -3,6 +3,9 @@ config.json
 auth_state/
 cookies.txt
 
+# personal branding — drop your own menu.jpg in the project root
+menu.jpg
+
 # runtime state & logs
 bot.log
 crash.log

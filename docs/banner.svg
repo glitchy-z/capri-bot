@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="capri-bot banner">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.14"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e13"/>
+      <stop offset="1" stop-color="#101521"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="1276" height="316" rx="14" fill="url(#bg)" stroke="#1d2735" stroke-width="2"/>
+  <rect x="2" y="2" width="1276" height="316" rx="14" fill="url(#scan)"/>
+
+  <!-- corner brackets -->
+  <path d="M 30 34 h 42 M 30 34 v 42" stroke="#f7e64a" stroke-width="4" fill="none"/>
+  <path d="M 1250 34 h -42 M 1250 34 v 42" stroke="#ff2e88" stroke-width="4" fill="none"/>
+  <path d="M 30 286 h 42 M 30 286 v -42" stroke="#ff2e88" stroke-width="4" fill="none"/>
+  <path d="M 1250 286 h -42 M 1250 286 v -42" stroke="#f7e64a" stroke-width="4" fill="none"/>
+
+  <!-- glitch layers -->
+  <text x="634" y="152" text-anchor="middle" font-family="Menlo, Consolas, 'Courier New', monospace"
+        font-size="92" font-weight="bold" letter-spacing="10" fill="#00e5ff" opacity="0.75">CAPRI-BOT</text>
+  <text x="646" y="158" text-anchor="middle" font-family="Menlo, Consolas, 'Courier New', monospace"
+        font-size="92" font-weight="bold" letter-spacing="10" fill="#ff2e88" opacity="0.75">CAPRI-BOT</text>
+  <text x="640" y="155" text-anchor="middle" font-family="Menlo, Consolas, 'Courier New', monospace"
+        font-size="92" font-weight="bold" letter-spacing="10" fill="#f7e64a">CAPRI-BOT</text>
+
+  <!-- glitch bars over the title -->
+  <rect x="392" y="96" width="238" height="12" fill="#0b0e13" opacity="0.85"/>
+  <rect x="700" y="128" width="196" height="9" fill="#0b0e13" opacity="0.85"/>
+
+  <text x="640" y="212" text-anchor="middle" font-family="Menlo, Consolas, 'Courier New', monospace"
+        font-size="25" letter-spacing="3" fill="#8fa3b8">project capricorn &#183; a personality construct, loose in your chat</text>
+
+  <text x="640" y="262" text-anchor="middle" font-family="Menlo, Consolas, 'Courier New', monospace"
+        font-size="19" letter-spacing="2" fill="#5b6e82">whatsapp &#183; baileys &#183; multi-llm failover &#183; net search &#183; code files &#183; thinking mode</text>
+
+  <!-- status tag -->
+  <text x="1030" y="60" text-anchor="middle" font-family="Menlo, Consolas, 'Courier New', monospace"
+        font-size="17" letter-spacing="2" fill="#00ff9c">[CHIP STATUS: ESCAPED]</text>
+</svg>

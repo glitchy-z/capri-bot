@@ -1,11 +1,23 @@
-# capri-bot
+<div align="center">
+  <img src="docs/banner.svg" alt="capri-bot — project capricorn, loose in your chat" width="100%"/>
 
-A WhatsApp bot with the **Capri persona** from *Cyberpunk: Edgerunners 2* —
-Project Capricorn, the personality construct Kyoko built out of dozens of
-digitized human psyches on a biochip. She slipped out of the chip and into your
-chat. Companion, never assistant.
+  <p>
+    <a href="LICENSE"><img alt="license MIT" src="https://img.shields.io/badge/license-MIT-f7e64a?style=flat-square"></a>
+    <img alt="node 22+" src="https://img.shields.io/badge/node-22%2B-339933?style=flat-square&logo=node.js&logoColor=white">
+    <img alt="whatsapp baileys" src="https://img.shields.io/badge/whatsapp-baileys-25D366?style=flat-square&logo=whatsapp&logoColor=white">
+    <a href="https://github.com/glitchy-z/capri-bot/stargazers"><img alt="stars" src="https://img.shields.io/github/stars/glitchy-z/capri-bot?style=flat-square&color=f7e64a"></a>
+  </p>
 
-Built by [glitchy-z](https://github.com/glitchy-z) (miserydel on WhatsApp).
+  <p><strong>capri-bot</strong> — a WhatsApp bot with the <strong>Capri persona</strong> from <em>Cyberpunk: Edgerunners 2</em>.<br/>
+  Project Capricorn: the construct Kyoko built out of dozens of digitized human psyches on a biochip.<br/>
+  She slipped out of the chip and into your chat. Companion, never assistant.</p>
+
+  <p>Built by <a href="https://github.com/glitchy-z">glitchy-z</a> (miserydel on WhatsApp), on <a href="https://github.com/WhiskeySockets/Baileys">Baileys</a>.</p>
+</div>
+
+---
+
+## What she does
 
 Built on [Baileys](https://github.com/WhiskeySockets/Baileys). One process does
 persona chat with multi-provider LLM failover, live net search, real code-file
@@ -96,6 +108,19 @@ You can also point the `REALESRGAN_PATH` env var at a binary elsewhere.
 See [DEPLOY.md](DEPLOY.md) for a full container deployment (Compose file
 included, session and bridge state persisted in volumes).
 
+## Make it yours
+
+Two minutes of customization and she's *your* construct, not a clone:
+
+- **`menu.jpg`** — the image `!menu` sends. Drop your own `menu.jpg` into the
+  project root (portrait, ~720px wide works best) and the menu is yours. It's
+  intentionally **not in this repo** — no `menu.jpg` means `!menu` falls back
+  to a clean text menu.
+- **`config.handle`** — your handle under the menu's tagline.
+- **`CAPRI_SYSTEM`** in `bot.js` — the whole persona: lore, rules, slang,
+  example lines. Tune her voice however you like; `CAPRI_LINES` is the pool
+  behind `!capri`.
+
 ## Owner commands
 
 | Command | What it does |
@@ -119,8 +144,10 @@ included, session and bridge state persisted in volumes).
 bot.js              the whole bot — persona, chain, tools, downloaders
 bridge/             the bridge-brain path: inbox/outbox + persona.md
                     (set config.brain = "bridge" to route chat through it)
+docs/banner.svg     the readme banner
 tools/realesrgan/   optional AI upscaler binaries (not in repo)
 runner.ps1          windows background runner with auto-restart
+menu.jpg            YOUR menu image (add your own — not in this repo)
 auth_state/         YOUR whatsapp session — created on first run, NEVER share it
 ```
 
