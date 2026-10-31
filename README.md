@@ -19,12 +19,9 @@
 
 ## What she does
 
-Built on [Baileys](https://github.com/WhiskeySockets/Baileys). One process does
-persona chat with multi-provider LLM failover, live net search, real code-file
-generation, a thinking mode for math/debugging/puzzles, native-quality video
-downloads, AI image upscaling and stickers.
-
-## What she does
+One process does persona chat with multi-provider LLM failover, live net
+search, real code-file generation, a thinking mode for math/debugging/puzzles,
+native-quality video downloads, AI image upscaling and stickers.
 
 **Persona chat** — say her name in a group (or just text the message-yourself
 chat) and she answers in Capri's voice: Night City slang, no emojis, four
