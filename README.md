@@ -48,19 +48,17 @@ cocky, never a lecture.
 GPU (graceful fallback to lanczos without one), stickers, view-once reveal, the
 works.
 
-## Screenshots
+## How to build
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" width="33%"><img src="docs/chat-persona.svg" alt="persona chat" width="100%"/><br/><sub><b>persona chat</b> — say her name, she's there</sub></td>
-      <td align="center" width="33%"><img src="docs/chat-search.svg" alt="net search" width="100%"/><br/><sub><b>net search</b> — real results, her voice</sub></td>
-      <td align="center" width="33%"><img src="docs/chat-file.svg" alt="code files" width="100%"/><br/><sub><b>code files</b> — she writes, delivers, reviews</sub></td>
-    </tr>
-  </table>
+  <img src="docs/terminal.svg" alt="clone, install, scan the qr, awake" width="88%"/>
 </div>
 
-*Example conversations rendered from real replies the bot gave in testing.*
+Then scan the QR with WhatsApp — that's the whole setup. Detailed steps below.
+
+<div align="center">
+  <img src="docs/chat-example.svg" alt="example conversation" width="62%"/>
+</div>
 
 ## Quick start
 

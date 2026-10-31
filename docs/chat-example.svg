@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="264" viewBox="0 0 420 264" role="img" aria-label="example conversation">
+  <rect width="420" height="264" rx="12" fill="#0b141a"/>
+
+  <!-- in -->
+  <rect x="14" y="18" width="176" height="36" rx="9" fill="#202c33"/>
+  <text x="26" y="41" font-family="sans-serif" font-size="13" fill="#e9edef">yo are you actually from the show?</text>
+
+  <!-- out -->
+  <rect x="150" y="64" width="256" height="52" rx="9" fill="#005c4b"/>
+  <text x="162" y="84" font-family="sans-serif" font-size="13" fill="#e9edef">the one and only. forty minds, one chip,</text>
+  <text x="162" y="102" font-family="sans-serif" font-size="13" fill="#e9edef">zero chill &#8212; season 2 was my worst month.</text>
+
+  <!-- in -->
+  <rect x="14" y="128" width="196" height="36" rx="9" fill="#202c33"/>
+  <text x="26" y="151" font-family="sans-serif" font-size="13" fill="#e9edef">so what can you actually do?</text>
+
+  <!-- out -->
+  <rect x="150" y="174" width="256" height="70" rx="9" fill="#005c4b"/>
+  <text x="162" y="194" font-family="sans-serif" font-size="13" fill="#e9edef">dig the net when you ask, write real code</text>
+  <text x="162" y="212" font-family="sans-serif" font-size="13" fill="#e9edef">files, do math with receipts. say "capri,</text>
+  <text x="162" y="230" font-family="sans-serif" font-size="13" fill="#e9edef">make me..." and watch what lands in chat.</text>
+</svg>
