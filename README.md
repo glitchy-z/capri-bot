@@ -5,6 +5,8 @@ Project Capricorn, the personality construct Kyoko built out of dozens of
 digitized human psyches on a biochip. She slipped out of the chip and into your
 chat. Companion, never assistant.
 
+Built by [glitchy-z](https://github.com/glitchy-z) (miserydel on WhatsApp).
+
 Built on [Baileys](https://github.com/WhiskeySockets/Baileys). One process does
 persona chat with multi-provider LLM failover, live net search, real code-file
 generation, a thinking mode for math/debugging/puzzles, native-quality video
@@ -40,7 +42,7 @@ Requires **Node 22+** and **ffmpeg** (Windows: `winget install Gyan.FFmpeg`,
 Debian/Ubuntu: `apt install ffmpeg`).
 
 ```
-git clone <this repo>
+git clone https://github.com/glitchy-z/capri-bot.git
 cd capri-bot
 npm install
 cp config.example.json config.json   # windows: copy config.example.json config.json
