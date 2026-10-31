@@ -5,6 +5,7 @@
     <a href="LICENSE"><img alt="license MIT" src="https://img.shields.io/badge/license-MIT-f7e64a?style=flat-square"></a>
     <img alt="node 22+" src="https://img.shields.io/badge/node-22%2B-339933?style=flat-square&logo=node.js&logoColor=white">
     <img alt="whatsapp baileys" src="https://img.shields.io/badge/whatsapp-baileys-25D366?style=flat-square&logo=whatsapp&logoColor=white">
+    <a href="https://github.com/glitchy-z/capri-bot/actions/workflows/ci.yml"><img alt="ci" src="https://img.shields.io/github/actions/workflow/status/glitchy-z/capri-bot/ci.yml?branch=main&style=flat-square&label=ci"></a>
     <a href="https://github.com/glitchy-z/capri-bot/stargazers"><img alt="stars" src="https://img.shields.io/github/stars/glitchy-z/capri-bot?style=flat-square&color=f7e64a"></a>
   </p>
 
