@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="200" viewBox="0 0 1280 200" role="img" aria-label="persona packs">
+  <defs>
+    <linearGradient id="bgp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e13"/>
+      <stop offset="1" stop-color="#101521"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="1276" height="196" rx="12" fill="url(#bgp)" stroke="#1d2735" stroke-width="2"/>
+
+  <text x="40" y="58" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="34" font-weight="bold" letter-spacing="6" fill="#f7e64a">PERSONA PACKS</text>
+  <text x="40" y="88" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="15" letter-spacing="1" fill="#8fa3b8">one markdown file in personas/ is the whole character</text>
+
+  <!-- pack chips -->
+  <rect x="40" y="112" width="360" height="56" rx="10" fill="none" stroke="#f7e64a" stroke-width="2"/>
+  <text x="62" y="137" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="19" font-weight="bold" fill="#f7e64a">capri</text>
+  <text x="62" y="157" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#8fa3b8">the construct, full canon</text>
+
+  <rect x="440" y="112" width="360" height="56" rx="10" fill="none" stroke="#00e5ff" stroke-width="2"/>
+  <text x="462" y="137" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="19" font-weight="bold" fill="#00e5ff">none</text>
+  <text x="462" y="157" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#8fa3b8">clean slate, zero character</text>
+
+  <rect x="840" y="112" width="360" height="56" rx="10" fill="none" stroke="#ff2e88" stroke-width="2"/>
+  <text x="862" y="137" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="19" font-weight="bold" fill="#ff2e88">yours.md</text>
+  <text x="862" y="157" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#8fa3b8">edit one file, restart, done</text>
+
+  <text x="1240" y="30" text-anchor="end" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="14" fill="#5b6e82">config.persona &#183; config.name</text>
+</svg>

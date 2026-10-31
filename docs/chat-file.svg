@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" role="img" aria-label="code file example">
+  <rect width="360" height="640" rx="18" fill="#0b141a"/>
+
+  <!-- header -->
+  <rect width="360" height="56" rx="18" fill="#202c33"/>
+  <rect y="38" width="360" height="18" fill="#202c33"/>
+  <path d="M 20 28 l 10 -8 l -10 -8" stroke="#aebac1" stroke-width="2" fill="none"/>
+  <circle cx="52" cy="28" r="14" fill="#6a7175"/>
+  <text x="52" y="33" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0b141a">C</text>
+  <text x="76" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="#e9edef">Capri</text>
+  <text x="76" y="41" font-family="sans-serif" font-size="11" fill="#8696a0">online</text>
+  <text x="340" y="33" text-anchor="end" font-family="sans-serif" font-size="14" fill="#aebac1">&#8942;</text>
+
+  <!-- date pill -->
+  <rect x="140" y="70" width="80" height="20" rx="9" fill="#182229"/>
+  <text x="180" y="84" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#8696a0">TODAY</text>
+
+  <!-- in: request -->
+  <rect x="14" y="102" width="250" height="56" rx="10" fill="#202c33"/>
+  <text x="26" y="122" font-family="sans-serif" font-size="13" fill="#e9edef">capri make me a python script</text>
+  <text x="26" y="140" font-family="sans-serif" font-size="13" fill="#e9edef">that rolls a dice and says if i won</text>
+
+  <!-- out: voice line -->
+  <rect x="110" y="170" width="236" height="60" rx="10" fill="#005c4b"/>
+  <text x="122" y="190" font-family="sans-serif" font-size="13" fill="#e9edef">here's a tiny dice roller, choom &#8212;</text>
+  <text x="122" y="208" font-family="sans-serif" font-size="13" fill="#e9edef">hits 6 and you're the champ. what's</text>
+  <text x="122" y="223" font-family="sans-serif" font-size="13" fill="#e9edef">next, a high-stakes gamble? <tspan fill="#8696a0" font-size="10">09:45 &#10003;&#10003;</tspan></text>
+
+  <!-- out: file card -->
+  <rect x="110" y="242" width="236" height="74" rx="10" fill="#005c4b"/>
+  <rect x="122" y="252" width="196" height="54" rx="8" fill="#1f2c34"/>
+  <rect x="132" y="262" width="24" height="32" rx="3" fill="#f7e64a"/>
+  <path d="M 140 262 v 32 M 132 268 h 16" stroke="#0b0e13" stroke-width="1.5" fill="none"/>
+  <text x="164" y="276" font-family="monospace" font-size="12" font-weight="bold" fill="#e9edef">dice_game.py</text>
+  <text x="164" y="292" font-family="sans-serif" font-size="10" fill="#8696a0">297 B &#183; python</text>
+  <text x="286" y="300" text-anchor="end" font-family="sans-serif" font-size="10" fill="#8696a0">09:45 &#10003;&#10003;</text>
+
+  <!-- in: run result -->
+  <rect x="14" y="330" width="220" height="56" rx="10" fill="#202c33"/>
+  <text x="26" y="350" font-family="sans-serif" font-size="13" fill="#e9edef">it works!! rolled a 6 first try</text>
+  <text x="26" y="368" font-family="sans-serif" font-size="13" fill="#e9edef">&#128540;</text>
+
+  <!-- out: celebrate -->
+  <rect x="120" y="398" width="226" height="60" rx="10" fill="#005c4b"/>
+  <text x="132" y="418" font-family="sans-serif" font-size="13" fill="#e9edef">beginner's luck is a myth &#8212; that</text>
+  <text x="132" y="436" font-family="sans-serif" font-size="13" fill="#e9edef">was my stitching. best of five,</text>
+  <text x="132" y="451" font-family="sans-serif" font-size="13" fill="#e9edef">eddies on the table? <tspan fill="#8696a0" font-size="10">09:46 &#10003;&#10003;</tspan></text>
+
+  <!-- input bar -->
+  <rect y="576" width="360" height="64" fill="#202c33"/>
+  <rect x="14" y="592" width="280" height="32" rx="16" fill="#2a3942"/>
+  <text x="30" y="613" font-family="sans-serif" font-size="13" fill="#8696a0">Message</text>
+  <circle cx="330" cy="608" r="18" fill="#00a884"/>
+  <path d="M 330 600 v 12 M 326 608 l 4 4 l 4 -4" stroke="#0b141a" stroke-width="2" fill="none"/>
+</svg>

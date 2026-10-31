@@ -48,6 +48,20 @@ cocky, never a lecture.
 GPU (graceful fallback to lanczos without one), stickers, view-once reveal, the
 works.
 
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="33%"><img src="docs/chat-persona.svg" alt="persona chat" width="100%"/><br/><sub><b>persona chat</b> — say her name, she's there</sub></td>
+      <td align="center" width="33%"><img src="docs/chat-search.svg" alt="net search" width="100%"/><br/><sub><b>net search</b> — real results, her voice</sub></td>
+      <td align="center" width="33%"><img src="docs/chat-file.svg" alt="code files" width="100%"/><br/><sub><b>code files</b> — she writes, delivers, reviews</sub></td>
+    </tr>
+  </table>
+</div>
+
+*Example conversations rendered from real replies the bot gave in testing.*
+
 ## Quick start
 
 Requires **Node 22+** and **ffmpeg** (Windows: `winget install Gyan.FFmpeg`,
@@ -134,6 +148,10 @@ You can also point the `REALESRGAN_PATH` env var at a binary elsewhere.
 `FFMPEG_PATH` / `FFPROBE_PATH` env vars override the ffmpeg lookup.
 
 ## Personas — Capri, blank, or your own
+
+<div align="center">
+  <img src="docs/banner-personas.svg" alt="persona packs: capri, none, yours" width="100%"/>
+</div>
 
 The personality isn't hardcoded — it's a pack in `personas/`. Two ship with the
 bot, and you can write your own:
