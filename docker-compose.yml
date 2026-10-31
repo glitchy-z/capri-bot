@@ -1,0 +1,15 @@
+services:
+  capri-bot:
+    build: .
+    container_name: capri-bot
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Jakarta
+    volumes:
+      # logged-in session — persists across restarts and rebuilds
+      - ./data/auth_state:/app/auth_state
+      # chat memory + bridge queues
+      - ./data/bridge:/app/bridge
+      # settings and youtube/instagram cookies (edit on the host)
+      - ./config.json:/app/config.json
+      - ./cookies.txt:/app/cookies.txt:ro

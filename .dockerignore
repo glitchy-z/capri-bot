@@ -1,0 +1,14 @@
+node_modules
+auth_state
+data
+bot.log
+bot.pid
+bridge
+tools
+runner.ps1
+start-bg.ps1
+stop-bg.ps1
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore

@@ -1,0 +1,11 @@
+{
+  "public": false,
+  "owner": "",
+  "handle": "",
+  "brain": "nvidia",
+  "groqKey": "",
+  "nvidiaKey": "",
+  "nvidiaModel": "openai/gpt-oss-20b",
+  "openrouterKey": "",
+  "zhipuKey": ""
+}

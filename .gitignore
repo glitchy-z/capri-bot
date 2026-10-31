@@ -1,0 +1,22 @@
+# secrets & session — NEVER commit these
+config.json
+auth_state/
+cookies.txt
+
+# runtime state & logs
+bot.log
+crash.log
+bot.pid
+bridge/chat_memory.json
+bridge/history.json
+bridge/group_windows.json
+bridge/inbox/*
+bridge/outbox/*
+!bridge/inbox/.gitkeep
+!bridge/outbox/.gitkeep
+
+# deps
+node_modules/
+
+# big optional binaries — see README ("AI upscale")
+tools/realesrgan/
