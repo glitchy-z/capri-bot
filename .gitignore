@@ -24,4 +24,3 @@ node_modules/
 # big optional binaries — see README ("AI upscale")
 tools/realesrgan/
 gen-shot.js
-docs/setup-terminal.svg
