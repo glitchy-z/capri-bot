@@ -27,4 +27,4 @@ gen-shot.js
 
 # capri voice renders — local only, never shared
 voice/
-make-voice.js
+make-voice*.js
