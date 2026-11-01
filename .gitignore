@@ -24,3 +24,7 @@ node_modules/
 # big optional binaries — see README ("AI upscale")
 tools/realesrgan/
 gen-shot.js
+
+# capri voice renders — local only, never shared
+voice/
+make-voice.js
